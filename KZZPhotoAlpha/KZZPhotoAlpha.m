@@ -48,7 +48,6 @@
     [_btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [_imageView addSubview:_btn];
     
-    
     //退出
     UITapGestureRecognizer * exit = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(returnHome:)];
     exit.numberOfTapsRequired = 2;
