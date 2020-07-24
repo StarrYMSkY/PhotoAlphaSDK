@@ -13,6 +13,6 @@
 @property(nonatomic,nonnull) UIImageView * imageView;
 @property(nonatomic,nonnull) UIButton * btn;
 
-- (void)ShowTheView :(UIViewController *) object;
+- (void)showTheView :(UIViewController *) object;
 
 @end

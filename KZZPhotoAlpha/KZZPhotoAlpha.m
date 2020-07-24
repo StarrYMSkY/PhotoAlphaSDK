@@ -16,7 +16,7 @@
     __weak UIViewController *_object;
 }
 
-- (void)ShowTheView : (UIViewController *) object{
+- (void)showTheView : (UIViewController *) object{
     //持有object
     _object = object;
     
