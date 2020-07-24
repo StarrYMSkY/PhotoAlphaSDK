@@ -16,6 +16,7 @@
     __weak UIViewController *_object;
 }
 
+//单例
 + (instancetype)shared {
     static KZZPhotoAlpha *instance;
     static dispatch_once_t onceToken;
