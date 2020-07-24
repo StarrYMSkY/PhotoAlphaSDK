@@ -6,16 +6,11 @@
 //  Copyright © 2020 陈又铜. All rights reserved.
 //
 
-
 #import <UIKit/UIKit.h>
 
 @interface KZZPhotoAlpha : UIViewController
 
-@property(nonatomic,nonnull) UIImageView * imageView;
-@property(nonatomic,nonnull) UIButton * btn;
-
 + (instancetype)shared;
-
-- (void)showTheView :(UIViewController *) object;
+- (void)chooseImage :(UIWindow *) window;
 
 @end
