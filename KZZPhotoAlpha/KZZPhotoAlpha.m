@@ -16,6 +16,15 @@
     __weak UIViewController *_object;
 }
 
++ (instancetype)shared {
+    static KZZPhotoAlpha *instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[KZZPhotoAlpha alloc] init];
+    });
+    return instance;
+}
+
 - (void)showTheView : (UIViewController *) object{
     //持有object
     _object = object;
@@ -46,6 +55,7 @@
     [_btn setTitleColor: [UIColor blackColor] forState:UIControlStateNormal];
     _btn.titleLabel.font = [UIFont systemFontOfSize:20];
     [_btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    _btn.hidden = NO;
     [_imageView addSubview:_btn];
     
     //退出

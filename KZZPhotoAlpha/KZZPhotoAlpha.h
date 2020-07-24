@@ -13,6 +13,8 @@
 @property(nonatomic,nonnull) UIImageView * imageView;
 @property(nonatomic,nonnull) UIButton * btn;
 
++ (instancetype)shared;
+
 - (void)showTheView :(UIViewController *) object;
 
 @end
