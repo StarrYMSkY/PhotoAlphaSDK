@@ -52,6 +52,7 @@
 
 - (void)chooseImage:(UIWindow *) imageWindow{
     _window = imageWindow;
+    [_imageView removeFromSuperview];//实现释放imageView，防止连续两次摇一摇时出现BUG
     [self showTheView:imageWindow];
     UIImagePickerController * pickerControll = [[UIImagePickerController alloc] init];
     pickerControll.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
